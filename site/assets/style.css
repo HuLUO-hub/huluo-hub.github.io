@@ -62,3 +62,26 @@
   object-fit: contain;
 }
 .publication.compact .publication-meta { min-height: 54px; }
+
+/* Compact ICHIH and QIMS figures; retain the entire image. */
+.publication.featured[data-id="5"],
+.publication.featured[data-id="6"] {
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+.publication[data-id="5"] .paper-figure img,
+.publication[data-id="6"] .paper-figure img,
+.publication[data-id="5"] .paper-figure svg,
+.publication[data-id="6"] .paper-figure svg {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+.publication[data-id="5"] .paper-figure figcaption,
+.publication[data-id="6"] .paper-figure figcaption {
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: 0;
+  margin-top: 8px;
+}
