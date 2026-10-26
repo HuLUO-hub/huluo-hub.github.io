@@ -90,3 +90,20 @@
   min-height: 54px;
   padding-top: 4px;
 }
+
+/* V5: a shared alignment axis, independent of image dimensions. */
+#publications .publication {
+  display: grid;
+  grid-template-columns: 258px minmax(0, 1fr);
+  column-gap: 32px;
+  align-items: start;
+}
+#publications .publication > .paper-content { grid-column: 2; margin-left: 0; }
+#publications .publication > .paper-figure,
+#publications .publication > .publication-meta {
+  grid-column: 1;
+  justify-self: start;
+  margin-left: 0;
+}
+#publications .more-items { margin-left: 0; padding-left: 0; }
+#publications .more-items > summary { margin-left: 0; margin-right: 0; }
