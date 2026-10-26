@@ -53,8 +53,12 @@ def publication(p):
         visual=path.read_text(encoding='utf-8').replace('<svg ',f'<svg role="img" aria-label="{e(p["image_alt"],quote=True)}" ',1) if path.suffix=='.svg' else f'<img src="{e(p["image"])}" alt="{e(p["image_alt"])}" loading="lazy">'
         side=f'<figure class="paper-figure">{link(url,visual)}<figcaption>{e(p.get("image_caption", "Research schematic"))}</figcaption></figure>'
     else:
-        year_label = str(p["year"]) if p.get("year") is not None else "Year pending"
-        side=f'<div class="publication-meta"><span>{e(year_label)}</span><span class="badge">{e(p["status"])}</span></div>'
+        in_review = p.get("status", "").casefold() in {"major revision", "minor revision", "under review", "in review"}
+        if in_review:
+            side='<div class="publication-meta"><span class="badge">In Review</span></div>'
+        else:
+            year_label = f'<span>{e(str(p["year"]))}</span>' if p.get("year") is not None else ""
+            side=f'<div class="publication-meta">{year_label}<span class="badge">{e(p["status"])}</span></div>'
     author_line='' if p.get('key_manuscript') else f'<p class="paper-authors">{authors.rstrip(".")}.</p>'
     role_line=f'<span class="author-role">{role}</span>' if role else ''
     return f'<li class="publication {cls}" data-id="{p["id"]}" data-status="{e(p["status"])}">{side}<div class="paper-content"><p class="paper-venue">{e(p["display_venue"])} {role_line}</p><h3 class="paper-title">{title}</h3>{author_line}{summary}{expertise}<div class="paper-actions">{actions}</div></div></li>'
