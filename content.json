@@ -1287,5 +1287,5 @@
     ],
     "note": "Copy a preset array into publication_order to activate it. New options are data only; UI support requires frontend integration."
   },
-  "wechat_qr": "assets/wechat-qr.jpg"
+  "wechat_qr": "assets/wechat_qr.jpg"
 }
