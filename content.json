@@ -115,7 +115,7 @@
       "image": "assets/research/Platform.jpg",
       "image_alt": "Conceptual cutaway of a flexible optical sensor: contact deforms a particle-containing layer observed by a camera.",
       "first_author": true,
-      "image_caption": "Research schematic"
+      "image_caption": "The world’s first platform for detecting multidimensional distributed forces during gait, based on the principle of vision-based tactile sensing."
     },
     {
       "id": 2,
@@ -133,7 +133,7 @@
       "image": "assets/research/Features.png",
       "image_alt": "Conceptual two-branch diagram combining directional and grayscale image features for pressure and shear estimation.",
       "first_author": true,
-      "image_caption": "Research schematic"
+        "image_caption": "Different features of a multidimensional force detection platform based on vision-based tactile sensing exhibit varying capabilities for forces decoupling."
     },
     {
       "id": 3,
@@ -151,7 +151,7 @@
       "image": "assets/research/Benchmark.png",
       "image_alt": "Conceptual evaluation pipeline: eight models, force-specific measurement criteria, foot phantom and gait validation.",
       "first_author": true,
-      "image_caption": "Research schematic"
+      "image_caption": "A novel evaluation metric system—distinct from those used for traditional force sensors—for a plantar multidimensional force detection platform based on vision-based tactile sensing principles."
     },
     {
       "id": 4,
@@ -283,9 +283,9 @@
       "title": "A Sim-to-Real Approach towards Spatially Resolved Multidimensional Forces in Vision-Based Tactile Sensor: From Nonlinear Material Modeling to Real-world Deployment",
       "venue": "IEEE Sensors Journal",
       "year": null,
-      "status": "Submitted",
+      "status": "Published",
       "citation": "Huang, Q., Luo H., Chen H., Wang F., Jiang Y.-G., Chen W. A Sim-to-Real Approach towards Spatially Resolved Multidimensional Forces in Vision-Based Tactile Sensor: From Nonlinear Material Modeling to Real-world Deployment. IEEE Sensors Journal. ",
-      "doi": "",
+      "doi": "10.1109/JSEN.2026.3744741",
       "selected": false,
       "authors": "Huang, Q., Luo H., Chen H., Wang F., Jiang Y.-G., Chen W",
       "display_venue": "IEEE Sensors Journal",
