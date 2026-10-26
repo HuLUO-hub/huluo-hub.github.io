@@ -107,3 +107,8 @@
 }
 #publications .more-items { margin-left: 0; padding-left: 0; }
 #publications .more-items > summary { margin-left: 0; margin-right: 0; }
+
+/* WeChat QR popup: preserve the whole code and its quiet zone. */
+.wechat-card { width: 252px; padding: 15px; background: #fff; }
+.wechat-card .wechat-qr { display: block; width: 220px; height: auto; max-width: 100%; margin: 0 auto 10px; object-fit: contain; }
+.wechat-card span { text-align: center; letter-spacing: 0; line-height: 1.5; }
