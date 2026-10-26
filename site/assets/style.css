@@ -45,3 +45,20 @@
 .patent-reference{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin-top:12px}
 .patent-reference .text-link{margin-top:0}
 .patent-number{font:11px/1.6 var(--sans);color:var(--green)}
+
+/* Smaller figures for short collaborative publication entries. */
+.publication.featured[data-id="6"],
+.publication.featured[data-id="7"] {
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+.publication[data-id="6"] .paper-figure img,
+.publication[data-id="7"] .paper-figure img,
+.publication[data-id="6"] .paper-figure svg,
+.publication[data-id="7"] .paper-figure svg {
+  width: 100%;
+  max-height: 145px;
+  object-fit: contain;
+}
+.publication.compact .publication-meta { min-height: 54px; }
