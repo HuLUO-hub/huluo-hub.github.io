@@ -44,15 +44,17 @@ def publication(p):
     if p.get('project_url'): actions+=' '+link(p['project_url'],'Project ↗','text-link')
     summary=f'<p class="paper-summary">{e(p["summary"])}</p>' if p.get('summary') else ''
     expertise=f'<p class="expertise">{e(p["expertise"])}</p>' if p.get('expertise') else ''
-    cls='featured' if p.get('image') else 'compact'
+    display_image = p.get('selected', False) is True
+    cls='featured' if display_image else 'compact'
     role='First author' if p.get('first_author', False) else ''
-    if p.get('image'):
+    if display_image:
         path=OUT/p['image']
         # Inline SVG avoids operating-system MIME differences during local preview.
         visual=path.read_text(encoding='utf-8').replace('<svg ',f'<svg role="img" aria-label="{e(p["image_alt"],quote=True)}" ',1) if path.suffix=='.svg' else f'<img src="{e(p["image"])}" alt="{e(p["image_alt"])}" loading="lazy">'
         side=f'<figure class="paper-figure">{link(url,visual)}<figcaption>{e(p.get("image_caption", "Research schematic"))}</figcaption></figure>'
     else:
-        side=f'<div class="publication-meta"><span>{p["year"] if p["status"]=="Published" else "In review"}</span><span class="badge">{e(p["status"])}</span></div>'
+        year_label = str(p["year"]) if p.get("year") is not None else "Year pending"
+        side=f'<div class="publication-meta"><span>{e(year_label)}</span><span class="badge">{e(p["status"])}</span></div>'
     author_line='' if p.get('key_manuscript') else f'<p class="paper-authors">{authors.rstrip(".")}.</p>'
     role_line=f'<span class="author-role">{role}</span>' if role else ''
     return f'<li class="publication {cls}" data-id="{p["id"]}" data-status="{e(p["status"])}">{side}<div class="paper-content"><p class="paper-venue">{e(p["display_venue"])} {role_line}</p><h3 class="paper-title">{title}</h3>{author_line}{summary}{expertise}<div class="paper-actions">{actions}</div></div></li>'
