@@ -8,10 +8,10 @@
   "wechat": "18995477896",
   "profile": {
     "page_title": "Hu Luo | Academic Homepage",
-    "page_description": "Hu Luo, a Ph.D. student in Biomedical Engineering at Fudan University, working on vision-based tactile sensing, multidimensional force estimation and gait biomechanics.",
+    "page_description": "Hu Luo, a Ph.D. candidate in Biomedical Engineering at Fudan University, working on vision-based tactile sensing, multidimensional force estimation, and gait biomechanics.",
     "top_label": "ACADEMIC PROFILE",
-    "research_tagline": "BIOMEDICAL ENGINEERING · TACTILE ROBOTICS",
-    "role": "Ph.D. Student in Biomedical Engineering",
+    "research_tagline": "BIOMEDICAL ENGINEERING · TACTILE SENSING",
+    "role": "Ph.D. Candidate in Biomedical Engineering",
     "affiliation": "Fudan University",
     "affiliation_zh": "复旦大学",
     "portrait": "assets/phpto.png",
@@ -1287,5 +1287,5 @@
     ],
     "note": "Copy a preset array into publication_order to activate it. New options are data only; UI support requires frontend integration."
   },
-  "wechat_qr": "assets/wechat-qr.png"
+  "wechat_qr": "assets/wechat-qr.jpg"
 }
