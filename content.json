@@ -1065,13 +1065,13 @@
       "partnerships": []
     },
     {
-    "title": "A Method and System for Force Field Computation and Self-Calibration of Large-Area Multidimensional Force Plates by Integrating Visual Deformation Fields and Multipoint Global Force Measurements",
-    "inventors": "Chen Wen-Ming, Luo Hu",
-    "number": "2026117762058",
-    "status": "Filed",
-    "inventor_rank": 2,
-    "summary": "This invention integrates visual deformation fields with multipoint global force measurements to compute distributed multidimensional force fields and enable self-calibration of large-area force plates. It complements my research on visuotactile sensing and plantar pressure and shear force measurement.",
-    "partnerships": []
+  "title": "A Contact Force Measurement and Condition Monitoring Method, Apparatus, Device, and Medium for Multidimensional Force Plates",
+  "inventors": "Chen Wen-Ming, Luo Hu",
+  "number": "2026117762058",
+  "status": "Filed",
+  "inventor_rank": 2,
+  "summary": "This invention concerns contact force measurement and condition monitoring for multidimensional force plates. It complements my research on distributed force sensing and reliable visuotactile measurement systems.",
+  "partnerships": []
     },
     {
       "title": "A Gait Analysis Method, Related Apparatus, and Computer Storage Medium",
