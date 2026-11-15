@@ -706,7 +706,7 @@
       "status": "Published",
       "citation": "Chen, H., Luo H., Huang Q., Wang F., Ma Y., Jiang Y.-G., Chen W. u-Tac: A Biomimetic Fingertip Visuotactile Sensor Enables 3D Force Detection Capabilities in Dexterous Robotic Hand. IEEE Robotics and Automation Letters, early access, pp. 1–8, Nov. 13, 2026. doi: 10.1109/LRA.2026.3753878.",
       "doi": "10.1109/LRA.2026.3753878",
-      "selected": false,
+      "selected": true,
       "authors": "Chen, H., Luo H., Huang Q., Wang F., Ma Y., Jiang Y.-G., Chen W",
       "display_venue": "IEEE Robotics and Automation Letters · 2026",
       "first_author": false,
